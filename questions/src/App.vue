@@ -59,8 +59,8 @@ export default {
   mounted: function() {
     axios
     // .get('https://opentdb.com/api.php?amount=10&type=multiple')
-    .get('https://opentdb.com/api.php?amount=10&category=18&type=multiple')
-    .then(response => { this.questions = response.data.results})
+    .get('http://localhost:3000')
+    .then(response => { this.questions = response.data })
     .catch(error => { console.log(error)})
   }
 }
