@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>
-            <b-jumbotron :class="submitted && index+1 == questions.length ? 'nodisplay' : 'display'">
+            <b-jumbotron >
                 <template v-slot:lead>
                     {{ qn.question }}
                 </template>
